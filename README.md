@@ -1,0 +1,1 @@
+This package consists of tools and examples for modeling defect thermodynamics in semiconducting and insulating compounds.
