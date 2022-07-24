@@ -6,7 +6,6 @@
                    "Cl_Te", "Cl_int", "Cl_Te+V_Cd", "Cl_int+V_Cd",
                    "Cu_Cd", "Cu_int", "Cu_Cd+Cd_int", "Cu_Cd+Cu_int"],
   "charge_order": [-3, -2, -1, 0, 1, 2, 3, 4],
-  "reference_atomic_fractions": {"Cd": 0.5, "Se": 0, "Te": 0.5, "Cu": 0, "As": 0, "Cl": 0},
   "compound_stoichiometry": {"Cd": 1, "Se": 0, "Te": 1, "Cu": 0, "As": 0, "Cl": 0},
   "electron_effective_mass": 0.095,
   "hole_effective_mass": 0.84,
@@ -19,398 +18,398 @@
   "defect_references": {
     "V_Cd": {
         "particles_removed": {"Cd": 1, "Se": 0, "Te": 0, "Cu": 0, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 1.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 1.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy": 2.99,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": -1,
                 "defect_energy": 3.84,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": -2,
                 "defect_energy": 3.70,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "V_Te": {
         "particles_removed": {"Cd": 0, "Se": 0, "Te": 1, "Cu": 0, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 1.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 1.0,
         "charge_states": [
                 {"charge": 2,
                 "defect_energy": -0.13,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Cd_Te": {
         "particles_removed": {"Cd": -1, "Se": 0, "Te": 1, "Cu": 0, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 1.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 1.0,
         "charge_states": [
                 {"charge": 2,
                 "defect_energy": 0.29,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Te_Cd": {
         "particles_removed": {"Cd": 1, "Se": 0, "Te": -1, "Cu": 0, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 1.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 1.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  2.54,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 1,
                 "defect_energy": 2.37,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 2,
                 "defect_energy": 1.55,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": -2,
                 "defect_energy": 5.13,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Cd_int": {
         "particles_removed": {"Cd": -1, "Se": 0, "Te": 0, "Cu": 0, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 1.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 1.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  2.04,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 2,
                 "defect_energy": -0.52,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Te_int": {
         "particles_removed": {"Cd": 0, "Se": 0, "Te": -1, "Cu": 0, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 1.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 1.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  1.81,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 2,
                 "defect_energy": 0.86,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "V_Cd+Te_Cd": {
         "particles_removed": {"Cd": 2, "Se": 0, "Te": -1, "Cu": 0, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 12.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 12.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  4.78,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": -2,
                 "defect_energy": 6.57,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Te_int+Te_int": {
         "particles_removed": {"Cd": 0, "Se": 0, "Te": -2, "Cu": 0, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 12.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 12.0,
         "charge_states": [
                 {"charge": 1,
                 "defect_energy":  2.60,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 2,
                 "defect_energy":  1.25,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 3,
                 "defect_energy":  1.01,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 4,
                 "defect_energy":  0.87,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Te_int+Te_Cd": {
         "particles_removed": {"Cd": 1, "Se": 0, "Te": -2, "Cu": 0, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 4.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 4.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  2.90,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 2,
                 "defect_energy":  2.13,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 3,
                 "defect_energy":  1.94,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 4,
                 "defect_energy":  1.87,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "As_Te": {
         "particles_removed": {"Cd": 0, "Se": 0, "Te": 1, "Cu": 0, "As": -1, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 1.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 1.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  3.59,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 1,
                 "defect_energy":  2.96,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": -1,
                 "defect_energy":  3.68,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
                
             ]
     },
 
     "Cl_Te": {
         "particles_removed": {"Cd": 0, "Se": 0, "Te": 1, "Cu": 0, "As": 0, "Cl": -1},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 1.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 1.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  0.77,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 1,
                 "defect_energy":  -0.48,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Cl_int": {
         "particles_removed": {"Cd": 0, "Se": 0, "Te": 0, "Cu": 0, "As": 0, "Cl": -1},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 1.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 1.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  0.85,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": -1,
                 "defect_energy":  1.02,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 1,
                 "defect_energy":  -0.42,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Cl_Te+V_Cd": {
         "particles_removed": {"Cd": 1, "Se": 0, "Te": 1, "Cu": 0, "As": 0, "Cl": -1},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 4.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 4.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  2.63,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": -1,
                 "defect_energy":  2.75,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Cl_int+V_Cd": {
         "particles_removed": {"Cd": 1, "Se": 0, "Te": 0, "Cu": 0, "As": 0, "Cl": -1},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 4.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 4.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  2.71,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": -1,
                 "defect_energy":  2.89,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Cu_Cd": {
         "particles_removed": {"Cd": 1, "Se": 0, "Te": 0, "Cu": -1, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 1.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 1.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  1.74,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": -1,
                 "defect_energy":  1.90,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Cu_int": {
         "particles_removed": {"Cd": 0, "Se": 0, "Te": 0, "Cu": -1, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 1.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 1.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  1.93,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 1,
                 "defect_energy":  0.60,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Cu_Cd+Cd_int": {
         "particles_removed": {"Cd": 0, "Se": 0, "Te": 0, "Cu": -1, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 4.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 4.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  2.45,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 1,
                 "defect_energy":  1.21,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": -1,
                 "defect_energy":  3.58,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     },
 
     "Cu_Cd+Cu_int": {
         "particles_removed": {"Cd": 1, "Se": 0, "Te": 0, "Cu": -2, "As": 0, "Cl": 0},
-        "mixing_entropy": 0.5,
-        "configurational_entropy": 4.0,
+        "mixing_prefactor": 0.5,
+        "configurational_prefactor": 4.0,
         "charge_states": [
                 {"charge": 0,
                 "defect_energy":  2.24,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": 1,
                 "defect_energy":  2.01,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0},
+                "electronic_prefactor": 1.0},
 
                 {"charge": -1,
                 "defect_energy":  3.67,
                 "charge_correction": 0,
                 "potential_alignment": 0,
-                "electronic_entropy": 1.0}
+                "electronic_prefactor": 1.0}
             ]
     }
 
