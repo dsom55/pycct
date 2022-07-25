@@ -38,5 +38,7 @@ with $\nu(E)$ the electronic density of states (DOS) and $N_e$ the number of ele
 
 For more thorough coverage of the theory involved, see e.g., [Rev. Mod. Phys. 86, 253 (2014)](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.86.253) and [IEEE JPV 5, 1188 (2015)](https://ieeexplore.ieee.org/document/7110503).
 
-### Basic Usage
-The user must supply parameters to calculate formation energies and free carrier concentrations. 
+### Basic Usage 
+Given a set of defect formation energies, electronic structure parameters, and standard chemical potential references provided by the user, the DefectThermodynamics class allows for the calculation of defect concentrations and self-consistent Fermi level as outlined above. For speed and simplicity, we have retained a grand canonical ensemble picture; in addition to temperature, the user is also required to specify a set of chemical potentials $\Delta \mu_i$ relative to their chosen standard references $\mu_i^0$. In principle, these should be constrained by the stability of the parent bulk material against the formation of secondary phases. 
+
+While the basic computations performed by the DefectThermodynamics class are relatively simple, they can be straighforwardly combined with high-dimensional search and constrained optimization techniques to yield more advanced functionality. Several examples are provided in the examples/CdTe.ipynb notebook.
