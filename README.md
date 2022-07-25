@@ -20,7 +20,11 @@ In the dilute limit, $c_{d,q} \ll 1$, this reduces to the typical Arrhenius form
 
 $$c_{d,q} \approx \theta_{d,q} e^{-\Delta E^f_{d,q} / k_\mathrm{B}T} \ .$$
 
-Entropic contributions to the Gibbs free energy of the system lead to the degeneracy prefactors, $\theta_{d,q} = \theta^\mathrm{mix}_d \theta^\mathrm{conf}_d \theta^\mathrm{el}_{d,q}$, which capture, respectively, lattice mixing, configurational (e.g., orientational or internal structural degrees of freedom) degeneracy, and electronic state degeneracy.  Defect formation energies $\Delta E^f_{i,q}$ can be derived from plane-wave Density Functional Theory (pwDFT) using the so-called *supercell method*,
+Various entropic contributions to the Gibbs free energy of the system lead to factorizable degeneracy prefactors, 
+
+$$\theta_{d,q} = \theta^\mathrm{mix}_{d,q} \theta^\mathrm{conf}_{d,q} \theta^\mathrm{el}_{d,q} \ ,$$ 
+
+which capture, respectively, lattice mixing, configurational (e.g., orientational or internal structural degrees of freedom) degeneracy, and electronic state degeneracy.  Defect formation energies can be derived from plane-wave Density Functional Theory (pwDFT) using the so-called *supercell method*,
 
 $$\Delta E^f_{i,q} = E_{d,q} - E_\mathrm{bulk} + \sum_i n_i(\mu_i^0 + \Delta \mu_i) + q(E_\mathrm{VBM} + E_\mathrm{Fermi} + \Delta V) + E_\mathrm{corr} \ ,$$
 
@@ -36,9 +40,11 @@ $$n - p = \int_{-\infty}^{\infty} dE \frac{\nu(E)}{1 + \exp\left[ (E-E_\mathrm{F
 
 with $\nu(E)$ the electronic density of states (DOS) and $N_e$ the number of electrons in the neutral bulk cell. For computational efficiency, we perform the Fermi integrals using an effective mass appoximation for the DOS.
 
-For more thorough coverage of the theory involved, see e.g., [Rev. Mod. Phys. 86, 253 (2014)](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.86.253) and [IEEE JPV 5, 1188 (2015)](https://ieeexplore.ieee.org/document/7110503).
+For more thorough coverage of the theory involved, see e.g., [Rev. Mod. Phys. 86, 253 (2014)](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.86.253).
 
 ### Basic Usage 
 Given a set of defect formation energies, electronic structure parameters, and standard chemical potential references provided by the user, the DefectThermodynamics class allows for the calculation of defect concentrations and self-consistent Fermi level as outlined above. For speed and simplicity, we have retained a grand canonical ensemble picture; in addition to temperature, the user is also required to specify a set of chemical potentials $\Delta \mu_i$ relative to their chosen standard references $\mu_i^0$. In principle, these should be constrained by the stability of the parent bulk material against the formation of secondary phases. 
+
+It is worth noting that, in the thermodynamic limit, one can equivalently describe the thermodynamics of the system in the canonical ensemble.  In this case, one specifies fixed atomic fractions $k_i$ rather than chemical potentials, and defect formation can be modeled through quasichemical mass action relations [[Phys. Status Solidi B 251, 1 (2014)](https://onlinelibrary.wiley.com/doi/full/10.1002/pssb.201350155)].  This is the approach taken in prior work [[IEEE JPV 5, 1188 (2015)](https://ieeexplore.ieee.org/document/7110503)]. Of course, depending on the experimental conditions one wishes to model, a mixed canonical / grand canonical approach might be more appropriate. A fixed subset of atomic fractions can be achieved in the current implementation by framing the target composition as an optimization objective.
 
 While the basic computations performed by the DefectThermodynamics class are relatively simple, they can be straighforwardly combined with high-dimensional search and constrained optimization techniques to yield more advanced functionality. Several examples are provided in the examples/CdTe.ipynb notebook.

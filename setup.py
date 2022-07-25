@@ -18,7 +18,7 @@ setuptools.setup(
     version='0.0.1',
     author='David Sommer',
     author_email='dsommer55@gmail.com',
-    description="Dilute defect thermodynamics in semiconducting and insulating compounds.",
+    description="Defect thermodynamics in semiconducting and insulating compounds.",
     long_description=long_description,
     long_description_content_type='text/markdown',
     python_requires='>=3.8',
